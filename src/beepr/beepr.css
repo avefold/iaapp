@@ -1,0 +1,11 @@
+.beepr-box {
+  gap: 1vw;
+  justify-content: center;
+}
+
+.setAlarm-btn {
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}

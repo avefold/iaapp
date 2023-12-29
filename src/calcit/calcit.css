@@ -1,0 +1,14 @@
+.grid-container {
+  display: grid;
+  grid-template-areas: 'myArea myArea myArea myArea';
+  gap: 5px;
+  width: 100%;
+}
+
+.item1 {
+  grid-area: myArea;
+  min-height: 72px;
+  border: 1px solid;
+  word-wrap: break-word;
+  word-break: break-all;
+}

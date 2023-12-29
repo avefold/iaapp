@@ -1,0 +1,23 @@
+.currnow-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+  border: 1px solid #dadce0;
+}
+
+.currnow-select {
+  background-color: white;
+  border-left: 1px solid #dadce0;
+  width: 95px;
+}
+
+.currnow-input {
+  width: 214px;
+  font-size: 2vw;
+}
+
+@media (max-width: 767px) {
+  .currnow-input {
+    font-size: 8vw;
+  }
+}

@@ -1,0 +1,25 @@
+.button-sd {
+  height: 100px;
+  width: 100px;
+  background-color: transparent;
+  border-color: transparent;
+  margin: 0 4px;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.button-sd:hover {
+  opacity: 0.5;
+}
+
+.number-sd {
+  align-self: flex-end;
+  font-size: 4vw;
+}
+
+@media (max-width: 767px) {
+  .number-sd {
+    font-size: 17vw;
+  }
+}

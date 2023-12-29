@@ -1,0 +1,167 @@
+.app-respon {
+  display: flex;
+}
+
+.app-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-row {
+  display: flex;
+}
+
+.app-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-320 {
+  width: 320px;
+}
+
+.height-app {
+  min-height: 100vh;
+}
+
+.body-app {
+  width: 100%;
+  max-height: max-content;
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+
+.logo {
+  height: 10em;
+  width: auto;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.bun:hover {
+  filter: drop-shadow(0 0 2em #febbd0);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 10s linear;
+  }
+}
+
+.logo-nav {
+  display: grid;
+  gap: 10px;
+}
+
+.logo-header {
+  height: 20vh;
+  cursor: pointer;
+}
+
+.nav-options {
+  display: grid;
+  grid-template-rows: repeat(13, auto);
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+@media (max-width: 767px) {
+  .app-respon {
+    flex-direction: column;
+  }
+
+  .logo {
+    height: 8em;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .body-app {
+    border-left-style: none;
+    border-top-width: 1px;
+    border-top-style: solid;
+  }
+
+  .nav-options {
+    border-top-width: 1px;
+    border-top-style: solid;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 9vh;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    flex-direction: column;
+  }
+
+  .nav-options.active {
+    background: white;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .menu-icon {
+    width: 9vw;
+    height: 9vh;
+    cursor: pointer;
+  }
+
+  .logo-header {
+    height: 9vh;
+  }
+
+  .option {
+    font-size: 10vw;
+  }
+
+  .logo-nav {
+    order: 1;
+  }
+
+  .beepr-app {
+    order: 2;
+  }
+
+  .date-app {
+    order: 3;
+  }
+
+  .mobile-menu {
+    display: block;
+    order: 4;
+  }
+}

@@ -1,0 +1,121 @@
+@media (max-width: 767px) {
+
+  .form-container-95,
+  .list-container-88,
+  .list-container-6,
+  .form-container-5 {
+    flex: 100%;
+  }
+}
+
+.dolist-box {
+  flex-wrap: wrap;
+  border: 1px solid;
+}
+
+.form-container-95 {
+  flex: 95%;
+  padding: 8px;
+}
+
+.form-95 {
+  width: 100%;
+  resize: none;
+  outline: none;
+}
+
+.form-container-5 {
+  flex: 5%;
+}
+
+.form-5 {
+  background-color: transparent;
+  height: auto;
+  width: auto;
+}
+
+.list-container-88 {
+  flex: 88%;
+  padding: 12px;
+  text-align: left;
+}
+
+.list-container-6 {
+  flex: 6%;
+  background-color: transparent;
+  height: auto;
+  width: auto;
+  padding: 14px;
+}
+
+.flex-todo {
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-row {
+  margin: 1vh 0;
+  background: #b9fbc0;
+}
+
+.todo-row:nth-child(11n + 1) {
+  background: #fbf8cc;
+}
+
+.todo-row:nth-child(11n + 2) {
+  background: #98f5e1;
+}
+
+.todo-row:nth-child(11n + 3) {
+  background: #fde4cf;
+}
+
+.todo-row:nth-child(11n + 4) {
+  background: #8eecf5;
+}
+
+.todo-row:nth-child(11n + 5) {
+  background: #ffcfd2;
+}
+
+.todo-row:nth-child(11n + 6) {
+  background: #90dbf4;
+}
+
+.todo-row:nth-child(11n + 7) {
+  background: #f1c0e8;
+}
+
+.todo-row:nth-child(11n + 8) {
+  background: #a3c4f3;
+}
+
+.todo-row:nth-child(11n + 9) {
+  background: #cfbaf0;
+}
+
+.todo-row:nth-child(11n + 10) {
+  background: #c0fdff;
+}
+
+.overlay {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  overflow: auto;
+}
+
+.modal {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+}

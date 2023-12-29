@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --hue-color: 240;
+  --first-color: hsl(var(--hue-color), 53%, 49%);
+}
+
+ul {
+  cursor: pointer;
+  list-style-type: none;
+}
+
+ul :hover {
+  text-decoration: underline;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+button,
+ul,
+p,
+select,
+table,
+textarea {
+  font-size: 2vw;
+}
+
+select {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: var(--first-color);
+  cursor: pointer;
+}
+
+input,
+textarea {
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+
+  button,
+  p,
+  select,
+  table,
+  textarea {
+    font-size: 5vw;
+  }
+}
